@@ -7,7 +7,7 @@ exports.up = function(knex) {
     table.integer("movie_id").unsigned().notNullable()
     table
         .foreign("movie_id")
-        .references("movies_id")
+        .references("movie_id")
         .inTable("movies")
         .onDelete("CASCADE")
     table.integer("theater_id").unsigned().notNullable()
